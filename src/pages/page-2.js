@@ -1,4 +1,5 @@
-import * as React from "react"
+/** @jsx jsx */
+import { jsx, Themed } from "theme-ui"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,9 +8,11 @@ import Seo from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <Seo title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Themed.h1>Hi from the second page</Themed.h1>
+    <Themed.p>Welcome to page 2</Themed.p>
+    <Themed.a as={Link} to="/">
+      Go back to the homepage
+    </Themed.a>
   </Layout>
 )
 
