@@ -1,9 +1,18 @@
 import base from "@theme-ui/preset-base"
 import { merge } from "theme-ui"
 
+import "@fontsource/saira/700.css"
+import "@fontsource/saira/400.css"
+
 const theme = merge(base, {
+  fontSizes: [12, 14, 16, 22, 24, 32, 48, 64, 96],
   fonts: {
-    // body: "Montserrat, sans-serif",
+    heading: `'Saira', sans-serif`,
+    body: `'Saira', sans-serif`,
+  },
+  fontWeights: {
+    heading: 700,
+    body: 400,
   },
   sizes: {
     container: 480,
@@ -11,7 +20,7 @@ const theme = merge(base, {
   layout: {
     header: {},
     main: {},
-    footer: {},
+    footer: { textAlign: "center" },
     container: {
       maxWidth: "container",
       mx: "auto",
@@ -21,8 +30,16 @@ const theme = merge(base, {
   styles: {
     a: {
       textDecoration: "none",
+      ":hover": {
+        color: "secondary",
+      },
+    },
+    p: {
+      fontSize: 3,
     },
   },
 })
+
+console.log(theme)
 
 export default theme
