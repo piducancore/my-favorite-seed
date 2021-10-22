@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "my-favorite-seed",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Another project to get started fast, with the technologies I hate the least 🌱",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "@piducancore",
   "dependencies": {
     "@fontsource/saira": "^4.5.1",
     "@theme-ui/presets": "^0.11.3",
@@ -26,7 +26,8 @@
     "prettier": "^2.4.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "theme-ui"
   ],
   "license": "0BSD",
   "scripts": {
@@ -40,9 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/piducancore/my-favorite-seed"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/piducancore/my-favorite-seed/issues"
   }
 }
