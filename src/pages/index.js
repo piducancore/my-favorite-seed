@@ -25,17 +25,6 @@ const IndexPage = () => (
         Go to page 2
       </Themed.a>{" "}
       <br />
-      <Themed.a as={Link} to="/using-typescript/">
-        Go to "Using TypeScript"
-      </Themed.a>{" "}
-      <br />
-      <Themed.a as={Link} to="/using-ssr">
-        Go to "Using SSR"
-      </Themed.a>{" "}
-      <br />
-      <Themed.a as={Link} to="/using-dsg">
-        Go to "Using DSG"
-      </Themed.a>
     </Themed.p>
   </Layout>
 )
