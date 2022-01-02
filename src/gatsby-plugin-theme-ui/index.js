@@ -1,10 +1,12 @@
-import base from "@theme-ui/preset-base"
+import system from "@theme-ui/preset-system"
 import { merge } from "theme-ui"
 
 import "@fontsource/saira/700.css"
 import "@fontsource/saira/400.css"
 
-const theme = merge(base, {
+import prismPreset from "@theme-ui/prism/presets/prism-coy.json"
+
+const theme = merge(system, {
   colors: {
     primary: "#6d2f9c",
     secondary: "#ffae1e",
@@ -19,7 +21,7 @@ const theme = merge(base, {
     body: 400,
   },
   sizes: {
-    container: 480,
+    container: 960,
   },
   layout: {
     header: {},
@@ -41,9 +43,14 @@ const theme = merge(base, {
     p: {
       fontSize: 3,
     },
+    code: {
+      ...prismPreset,
+      borderRadius: 4,
+    },
+    inlineCode: {
+      color: "primary",
+    },
   },
 })
-
-console.log(theme)
 
 export default theme
