@@ -1,10 +1,10 @@
-import base from "@theme-ui/preset-base"
+import { base as preset } from "@theme-ui/presets"
 import { merge } from "theme-ui"
 
 import "@fontsource/saira/700.css"
 import "@fontsource/saira/400.css"
 
-const theme = merge(base, {
+const theme = merge(preset, {
   colors: {
     primary: "#6d2f9c",
     secondary: "#ffae1e",
