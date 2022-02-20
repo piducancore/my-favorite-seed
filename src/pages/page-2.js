@@ -10,8 +10,8 @@ const SecondPage = () => (
     <Seo title="Page two" />
     <Themed.h1>Hi from the second page</Themed.h1>
     <Themed.p>Welcome to page 2</Themed.p>
-    <Themed.a as={Link} to="/">
-      Go back to the homepage
+    <Themed.a as={Link} to="/mdx">
+      Go to the MDX page
     </Themed.a>
   </Layout>
 )
